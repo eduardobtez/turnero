@@ -1,0 +1,53 @@
+/* Importar la fuente Montserrat con todos los pesos */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* COLORES */
+:root {
+  --color-crema: #faf8f4;
+  --color-azul: #274368;
+  --color-verde: #a8d6cb;
+  --color-verde-fondo: #2dc0a5;
+  --color-naranja: #ff7b00;
+}
+
+/* Estilo para el nav */
+.nav {
+  display: flex; /* Utilizamos flexbox */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #a8d6cb;
+}
+
+/* Contenedor de la lista de enlaces */
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: 1100px; /* Esto empuja los enlaces hacia la derecha */
+}
+
+/* Enlaces */
+.nav ul li a {
+  color: var(--color-azul);
+  text-decoration: none;
+  padding: 20px;
+  font-weight: 700;
+}
+
+.nav ul li a:hover {
+  color: #faf8f4;
+}
+
+.nav .register-button {
+  background-color: #274368;
+  color: #faf8f4;
+  border-radius: 50px;
+  padding: 15px;
+  font-weight: 900px;
+}
+
+.nav .register-button:hover {
+  background-color: #faf8f4;
+  color: #274368;
+}

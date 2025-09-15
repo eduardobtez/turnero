@@ -1,0 +1,106 @@
+/* Importar la fuente Montserrat con todos los pesos */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* COLORES */
+:root {
+  --color-crema: #faf8f4;
+  --color-azul: #274368;
+  --color-verde: #a8d6cb;
+  --color-verde-fondo: #2dc0a5;
+  --color-naranja: #ff7b00;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-center {
+  font-family: "Montserrat", sans-serif;
+  color: #274368;
+}
+
+.btn-success{
+    background-color: #2dc0a5;
+    color: #274368;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-success:hover{
+    background-color: #a8d6cb;
+    color: #274368;
+}
+
+.btn-cancel{
+    background-color: #a8d6cb;
+}
+
+.btn-cancel a{
+    color: #274368;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-cancel:hover{
+    background-color: #ff7b00;
+}
+
+.card {
+  background-color: #faf8f4;
+}
+
+.custom-header {
+    background-color: #a8d6cb;
+    color: #274368;
+    border: none;
+}
+
+.card-body{
+    background-color: #faf8f4;
+}
+/*--------------------------------------*/
+
+.custom{
+  color: #274368;
+}
+
+.custom h1{
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container my-5{
+background-color: #2dc0a5;
+}
+
+.card-title{
+  font-family: "Montserrat", sans-serif;
+  color: #2dc0a5;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-reserver{
+  background-color: #a8d6cb;
+  color: #274368;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+} 
+
+.btn-reserver a{
+  color: #274368;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-reserver:hover{
+  background-color: #274368;
+  color: #2dc0a5;
+} 

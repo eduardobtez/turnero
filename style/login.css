@@ -1,0 +1,77 @@
+/* Importar la fuente Montserrat con todos los pesos */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* COLORES */
+:root {
+  --color-crema: #faf8f4;
+  --color-azul: #274368;
+  --color-verde: #a8d6cb;
+  --color-verde-fondo: #2dc0a5;
+}
+
+body {
+  background-color: #faf8f4;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/FondoLogin.jpg);
+  background-size: cover;
+}
+.login-container {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+  max-width: 400px;
+  padding: 2rem;
+  background: hwb(0 100% 0% / 0.5);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+.text-center mb-4 {
+  font-weight: 300;
+}
+.toggle-password {
+  position: absolute; /* Relativo al div padre */
+  top: 50%; /* Alinea verticalmente */
+  right: 10px; /* Ajusta la distancia desde el borde derecho */
+  transform: translateY(15%); /* Centra verticalmente */
+  cursor: pointer;
+  color: #6c757d;
+  font-size: 18px; /* Ajusta el tamaño del icono */
+}
+.form-footer p {
+  text-align: center;
+  margin-top: 1rem;
+}
+.form-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+.d-grid .btn-primary {
+  color: #faf8f4;
+  background-color: #274368;
+  border: none;
+}
+
+.d-grid .btn-primary:hover {
+  background-color: #a8d6cb;
+  color: #274368;
+}
+
+.form-footer .btn-secondary {
+  background-color: #a8d6cb;
+  color: #274368;
+  border: none;
+  text-decoration: none;
+}
+
+.form-footer .btn-secondary:hover {
+  background-color: #274368;
+  color: #faf8f4;
+  text-decoration: none;
+}

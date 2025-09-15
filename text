@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Médica Los Altos</title>
+    <link rel="stylesheet" href="../CSS/login.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div>
+    </div>
+    <main>
+        <div>
+            <form action="" method="post">
+                <fieldset>
+                <h3>Clínica Médica Los Altos</h3>
+                    <legend>Inicio Sesión</legend><br>
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" name="usuario" id="usuario" required>
+                    <label for="contrasenia">Contraseña:</label>
+                    <div class="password-container">
+                        <input type="password" name="contrasenia" id="contrasenia" required>
+                        <span class="toggle-password" onclick="togglePassword()">
+                            <i class="fa-regular fa-eye" id="eye-icon"></i> <!-- Icono de ojo abierto -->
+                            <i class="fa-regular fa-eye-slash" id="eye-slash-icon" style="display: none;"></i> <!-- Icono de ojo cerrado -->
+                        </span>
+                    </div>
+                    <br><br>
+                    <input type="submit" name="ingresar" id="ingresar" value="Ingresar">
+
+                        <!-- Enlace para redirigir al formulario de registro -->
+                        <p>Aún no tienes cuenta? <a href="../view/Register.php">Registrarse</a></p>
+                </fieldset>
+            </form>
+            <div class="form-footer">
+        </div>
+            <?php
+            include "../config/config.php";
+            include "../controller/LoginController.php";
+            ?>
+        </div>
+    </main>
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById('contrasenia');
+            var eyeIcon = document.getElementById('eye-icon');
+            var eyeSlashIcon = document.getElementById('eye-slash-icon');
+            
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                eyeIcon.style.display = 'none';
+                eyeSlashIcon.style.display = 'block';
+            } else {
+                passwordField.type = 'password';
+                eyeIcon.style.display = 'block';
+                eyeSlashIcon.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

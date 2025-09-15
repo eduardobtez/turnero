@@ -1,0 +1,156 @@
+/* Importar la fuente Montserrat con todos los pesos */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* COLORES */
+:root {
+  --color-crema: #faf8f4;
+  --color-azul: #274368;
+  --color-verde: #a8d6cb;
+  --color-verde-fondo: #2dc0a5;
+  --color-naranja: #ff7b00;
+}
+
+/* para botones de inicio y cerrar sesion */
+.btn-sesion {
+  background-color: #a8d6cb;
+  color: #274368;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.btn-sesion:hover {
+  background-color: #274368;
+  color: #a8d6cb;
+}
+
+/* para botones de crear */
+.btn-create {
+  background-color: #274368;
+  color: #faf8f4;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.btn-create:hover {
+  background-color: #a8d6cb;
+  color: #274368;
+}
+
+/* para botones de cancelar */
+.btn-cancel {
+  background-color: #2dc0a5;
+  color: #274368;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+/* para botones de edición */
+.btn-edit {
+  background-color: #a8d6cb;
+  color: #274368;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.btn-edit:hover {
+  background: #274368;
+  color: #faf8f4;
+}
+
+/* para botones de eliminar*/
+.btn-delete {
+  background-color: #ff7b00;
+  color: #faf8f4;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+/* para botones de guardar*/
+.btn-save {
+  background-color: #a8d6cb;
+  color: #274368;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  width: 20%;
+}
+
+.btn-save:hover {
+  background: #274368;
+  color: #faf8f4;
+}
+
+/* para botones de actualizar*/
+.btn-update {
+  background-color: #a8d6cb;
+  color: #274368;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.btn-update:hover {
+  background: #274368;
+  color: #faf8f4;
+}
+
+/* para botones de volver*/
+.btn-return {
+  background-color: #274368;
+  color: #faf8f4;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+/* para botones de reservar*/
+.btn-reserve {
+  background-color: #2dc0a5;
+  color: #faf8f4;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  width: 20%;
+}
+
+.btn-reserve:hover {
+  background-color: #274368;
+  color: #a8d6cb;
+}
+
+/* para tabla en consultasasistente.php*/
+.table-responsive {
+  background-color: #faf8f4;
+}
+
+.title-table {
+  color: #274368;
+  text-align: center;
+}
+
+.table-bordered {
+  color: #274368;
+}
+
+.table-text {
+  color: #274368;
+}
+
+.table-content:hover {
+  background-color: #dddddd;
+  color: #274368;
+}

@@ -1,0 +1,178 @@
+/* Importar la fuente Montserrat con todos los pesos */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* COLORES */
+:root {
+  --color-crema: #faf8f4;
+  --color-azul: #274368;
+  --color-verde: #a8d6cb;
+  --color-verde-fondo: #2dc0a5;
+}
+
+/* Estilo para el nav */
+.nav {
+  display: flex; /* Utilizamos flexbox */
+}
+
+.nav ul li {
+  margin: 50px; /* Separación mínima entre los enlaces */
+}
+
+.nav ul li a {
+  color: var(--color-azul);
+  text-decoration: none;
+  padding: 0px; /* Espaciado interno más pequeño */
+  margin: 0; /* Eliminar margen que desorganiza */
+  display: inline-block; /* Asegura que el enlace se comporte como bloque en línea */
+}
+
+.nav ul li a:hover {
+  color: var(--color-verde);
+}
+
+.nav .register-button {
+  background-color: #a8d6cb;
+  color: #274368;
+  border-radius: 50px;
+  padding: 15px;
+  font-weight: 900px;
+}
+
+.nav .register-button:hover {
+  background-color: #274368;
+  color: #faf8f4;
+}
+
+/* Estilo global */
+body {
+  overflow: hidden;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--color-crema);
+}
+
+/* Estilo para el header */
+.header {
+  background-color: var(--color-crema);
+  color: var(--color-azul);
+  padding: 20px;
+}
+
+/* Estructura del contenedor principal para el texto */
+.main-content {
+  display: flex;
+  margin-left: 500px;
+  margin-top: -100px;
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  padding: 20px;
+}
+
+/* Contenedor del texto */
+.text-container {
+  flex: 1;
+  max-width: 50%; /* Limita el ancho del contenedor de texto */
+  margin-left: 100px;
+  padding-right: 20px; /* Espacio entre el texto y la imagen */
+  text-align: center;
+}
+
+.text-container h1 {
+  color: #274368;
+  font-weight: 700;
+}
+
+.text-container p {
+  color: #2dc0a5;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.text-container .btn-reservar {
+  background-color: #274368; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado del botón */
+  border-radius: 50px; /* Bordes redondeados */
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: 600; /* Negrita */
+  display: inline-block; /* Muestra el botón como bloque en línea */
+}
+
+.text-container .btn-reservar:hover {
+  background-color: #a8d6cb; /* Cambia el color de fondo al pasar el ratón */
+  color: #274368;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+  position: relative; /* Posición fija en la pantalla */
+  left: 0; /* Pegado al borde izquierdo */
+  top: 50%; /* Centrado verticalmente */
+  transform: translateY(-50%); /* Ajusta la imagen para centrarla bien */
+  max-width: 50%; /* Limita el tamaño máximo de la imagen */
+  display: flex;
+  justify-content: flex-start; /* Alinea la imagen a la izquierda */
+}
+
+/* Ajustar tamaño de la imagen */
+.image-container img {
+  max-width: 45%;
+  height: auto; /* Mantiene la proporción */
+  margin-bottom: 700px;
+}
+
+/* Estilos para el enlace de WhatsApp */
+.whatsapp-icon img {
+  width: 60px; /* Ajusta el tamaño del icono de WhatsApp */
+  margin-bottom: 200px; /* Espacio desde la parte inferior */
+  margin-right: 50px; /* Espacio desde la parte derecha */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Estilo adicional para los botones */
+.btn-reservar {
+  background-color: #274368; /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  padding: 10px 20px; /* Espaciado */
+  text-decoration: none; /* Elimina el subrayado */
+  border-radius: 5px; /* Bordes redondeados */
+  display: inline-block;
+}
+
+/* Estilo para el botón "Reservar Cita" */
+.btn-reservar {
+  background-color: var(--color-verde-fondo);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-reservar:hover {
+  background-color: var(--color-verde);
+}
+
+/* Iconos de redes sociales */
+.social-media a {
+  margin-right: 10px;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Sobre Mi Estilos*/
+
+.section-mi h2,
+h3,
+p {
+  color: #274368;
+  font-size: 20px;
+}
+
+.carousel-inner .carrusel-item {
+  max-width: 50%;
+}
